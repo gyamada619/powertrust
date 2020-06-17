@@ -3,10 +3,14 @@ A Go service which exposes an API to sign PowerShell scripts.
 
 ## Usage
 
+### Service Daemon
+
 ```
 powersign service
 ```
 Launches a service that listens on 7974 for PowerShell script uploads. Requires a signing certificate be loaded into `Cert:\LocalMachine\My`. 
+
+### CLI Upload
 
 ```
 powersign sign "http://localhost:7974" "C:\Users\me\myscript.ps1"
